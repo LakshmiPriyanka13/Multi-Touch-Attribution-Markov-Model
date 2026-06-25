@@ -9,7 +9,7 @@ Instead of relying on black-box libraries, this model was built using custom mat
 2.  **Transition Matrix:** Computed the conditional probability of a user moving from one channel (e.g., Social Media) to the next (e.g., Email).
 3.  **Removal Effect Algorithm:** Iteratively "removed" each channel from the matrix to calculate the total percentage drop in conversion probability. 
 
-##  Key Insights
+## Key Insights
 Our analysis of the customer journey revealed the following impacts on total conversion probability if a channel budget is cut:
 
 | Channel | Removal Effect (Conversion Drop) |
@@ -23,11 +23,11 @@ Our analysis of the customer journey revealed the following impacts on total con
 
 **Strategic Takeaway:** The data shows a highly synergistic ecosystem. Unlike many retail models where one channel dominates, this customer journey is resilient; no single channel carries the entire conversion weight. This suggests a balanced media mix strategy is optimal for this specific audience.
 
-##  Tech Stack
+## Tech Stack
 * **Python**
 * **Pandas & NumPy** (Matrix mathematics and sequence processing)
 * **Statsmodels** (Statistical validation)
 
-## 📁 How to Run
+## How to Run
 1. Ensure `multi_touch_attribution_data.csv` is in the same directory
 2. Run `Attribution_Project.ipynb` to generate the transition probabilities and removal effect coefficients
